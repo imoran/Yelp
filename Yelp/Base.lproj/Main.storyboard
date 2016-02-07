@@ -22,11 +22,11 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BusinessCell" rowHeight="130" id="f8d-a0-NXL" customClass="BusinessCell" customModule="Yelp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BusinessCell" rowHeight="130" id="f8d-a0-NXL" customClass="BusinessCell" customModule="Yelp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="320" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f8d-a0-NXL" id="JSs-j8-Dfq">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="129"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qug-cz-opx">
@@ -45,7 +45,7 @@
                                                         <constraint firstAttribute="height" constant="15" id="v7d-Ep-h9T"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="1. Grand Pu Bah" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFi-Jj-kAu">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="1. Grand Pu Bah" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFi-Jj-kAu">
                                                     <rect key="frame" x="81" y="8" width="178" height="18"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -59,7 +59,7 @@
                                                     <color key="textColor" red="0.59086458333333336" green="0.59086458333333336" blue="0.59086458333333336" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88 Division St, Mission Bay" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0J-ph-qef">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="88 Division St, Mission Bay" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0J-ph-qef">
                                                     <rect key="frame" x="81" y="43" width="231" height="16"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -73,14 +73,14 @@
                                                     <color key="textColor" red="0.59086458333333336" green="0.59086458333333336" blue="0.59086458333333336" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjC-bR-6kK">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjC-bR-6kK">
                                                     <rect key="frame" x="295" y="27" width="17" height="16"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.59086458333333336" green="0.59086458333333336" blue="0.59086458333333336" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0.07 mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcf-kT-GGh">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" misplaced="YES" text="0.07 mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcf-kT-GGh">
                                                     <rect key="frame" x="267" y="10" width="45" height="16"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -121,6 +121,7 @@
                                             <outlet property="ratingImageView" destination="jSn-q2-ovd" id="dRi-9f-GSi"/>
                                             <outlet property="reviewsCountLabel" destination="ez3-mN-74d" id="GEb-fO-ToA"/>
                                             <outlet property="thumbImageView" destination="qug-cz-opx" id="HWK-LL-A0o"/>
+                                            <segue destination="gd4-EO-gaU" kind="push" identifier="detailsSegue" id="oDe-Hh-9g5"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -149,6 +150,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgb-4b-F1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1485" y="338"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="rTY-ft-Tbj">
+            <objects>
+                <viewController id="gd4-EO-gaU" customClass="DetailsViewController" customModule="Yelp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d5n-o0-ika"/>
+                        <viewControllerLayoutGuide type="bottom" id="h6K-FI-ElY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dm4-Sg-Dd9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uf6-az-sLv">
+                                <rect key="frame" x="11" y="80" width="299" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxH-SU-7Tn">
+                                <rect key="frame" x="11" y="103" width="289" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHg-8U-fVZ">
+                                <rect key="frame" x="11" y="127" width="289" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sNl-GW-6ix"/>
+                    <connections>
+                        <outlet property="restaurantLabel" destination="Uf6-az-sLv" id="Z1V-Yb-K0v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T5t-Gy-2Sw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2005" y="317"/>
         </scene>
         <!--Filters-->
         <scene sceneID="fNV-w9-1V6">
@@ -268,7 +315,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXm-uj-zh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1886" y="338"/>
+            <point key="canvasLocation" x="1925" y="944"/>
         </scene>
     </scenes>
 </document>

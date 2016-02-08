@@ -73,15 +73,14 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         
     }
     
-    func loadMoreData() {
-        Business.searchWithTerm("Thai", offset: loadMoreOffset, sort: nil, categories: selectedCategories, deals: nil, completion: { (businesses: [Business]!, error: NSError!) -> Void in
-            self.businesses.appendContentsOf(businesses)
-            self.tableView.reloadData()
-            self.isMoreDataLoading = false
-        })
-        self.tableView.reloadData()
-        
-    }
+//    func loadMoreData() {
+//        Business.searchWithTerm("Thai", offset: loadMoreOffset, sort: nil, categories: selectedCategories, deals: nil, completion: { (businesses: [Business]!, error: NSError!) -> Void in
+//            self.businesses.appendContentsOf(businesses)
+//            self.tableView.reloadData()
+//            self.isMoreDataLoading = false
+//        })
+//        self.tableView.reloadData()
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -92,7 +91,7 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         searchBar.setShowsCancelButton(true, animated: true)
         
         if let searchText = searchBar.text {
-//        filteredData = searchText.isEmpty ? businesses : businesses?.filter({$0.name!.rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil
+
             filteredData = searchText.isEmpty ? businesses : businesses?.filter({(business:Business) -> Bool in business.name!.rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil
             });
         }

@@ -138,7 +138,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Yelp" id="azA-1b-YYh">
                         <barButtonItem key="leftBarButtonItem" title="Filters" style="plain" id="Ciu-1u-JQ1">
-                            <color key="tintColor" red="0.99017702669174201" green="1" blue="0.9715731785694155" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="bx5-IG-R6z" kind="modal" id="IlL-pL-eib"/>
                             </connections>

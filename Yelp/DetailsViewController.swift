@@ -30,7 +30,6 @@ class DetailsViewController: UIViewController {
         restaurantLabel.text = business.name
         addressLabel.text = business.address
         foodCategoryLabel.text = business.categories
-        mapView.delegate = self
         
         let centerLocation = CLLocation(latitude: 37.7833, longitude: -122.4167)
         goToLocation(centerLocation)

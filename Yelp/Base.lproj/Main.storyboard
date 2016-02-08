@@ -137,7 +137,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Yelp" id="azA-1b-YYh">
-                        <barButtonItem key="leftBarButtonItem" title="Filters" id="Ciu-1u-JQ1">
+                        <barButtonItem key="leftBarButtonItem" title="Filters" style="plain" id="Ciu-1u-JQ1">
+                            <color key="tintColor" red="0.99017702669174201" green="1" blue="0.9715731785694155" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="bx5-IG-R6z" kind="modal" id="IlL-pL-eib"/>
                             </connections>
@@ -177,19 +178,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHg-8U-fVZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHg-8U-fVZ">
                                 <rect key="frame" x="11" y="127" width="289" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kae-3e-yYP">
+                                <rect key="frame" x="0.0" y="161" width="320" height="347"/>
+                                <animations/>
+                            </mapView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="sNl-GW-6ix"/>
                     <connections>
+                        <outlet property="addressLabel" destination="jxH-SU-7Tn" id="Ae1-bv-2cG"/>
+                        <outlet property="foodCategoryLabel" destination="qHg-8U-fVZ" id="LCm-e2-DDJ"/>
+                        <outlet property="mapView" destination="kae-3e-yYP" id="j4J-9c-Bv3"/>
                         <outlet property="restaurantLabel" destination="Uf6-az-sLv" id="Z1V-Yb-K0v"/>
                     </connections>
                 </viewController>

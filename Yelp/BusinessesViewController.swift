@@ -18,7 +18,7 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -28,6 +28,9 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         searchBar.sizeToFit()
         navigationItem.titleView = searchBar
         searchBar.delegate = self
+//        searchBar.backgroundColor = UIColor.redColor()
+//        UIBarButtonItem.appearance()
+        
         
         Business.searchWithTerm("Thai", completion: { (businesses: [Business]!, error: NSError!) -> Void in
             self.filteredData = businesses
@@ -70,16 +73,15 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         
     }
     
-//    func loadMoreData() {
-//        let session = NSURLSession(
-//        configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
-//        delegate: nil,
-//        delegateQueue: NSOperationQueue.mainQueue()
-//    )
-//     
-//        let task : NSURLSessionDataTask = session.dataTaskWithRequest(myRequest)
-//        
-//    }
+    func loadMoreData() {
+        Business.searchWithTerm("Thai", offset: loadMoreOffset, sort: nil, categories: selectedCategories, deals: nil, completion: { (businesses: [Business]!, error: NSError!) -> Void in
+            self.businesses.appendContentsOf(businesses)
+            self.tableView.reloadData()
+            self.isMoreDataLoading = false
+        })
+        self.tableView.reloadData()
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -89,9 +91,12 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
         searchBar.setShowsCancelButton(true, animated: true)
         
-        filteredData = searchText.isEmpty ? businesses : businesses.filter({$0.name!.rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil 
-        })
-        tableView.reloadData()
+        if let searchText = searchBar.text {
+//        filteredData = searchText.isEmpty ? businesses : businesses?.filter({$0.name!.rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil
+            filteredData = searchText.isEmpty ? businesses : businesses?.filter({(business:Business) -> Bool in business.name!.rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil
+            });
+        }
+             tableView.reloadData()
     }
     
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
@@ -100,7 +105,6 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         searchBar.resignFirstResponder()
     }
     
-
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "detailsSegue" {

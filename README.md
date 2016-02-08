@@ -25,8 +25,8 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
-2. 
+1. Complete review of AutoLayout
+2. I tried implementing the MapView, but I was confused as to how to obtain each restaurant's coordinates
 
 ## Video Walkthrough 
 
@@ -39,6 +39,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+AutoLayout was definitely a bit challenging to understand. Also, because the zipped file already had content in it, it was quite difficult to modify for the optionals for me. I set up a details page for each restaurant, but it only has the name and address of each place, as I couldn't finish the MapView optional. I definitely plan on working on the optionals some more. 
 
 ## License
 
